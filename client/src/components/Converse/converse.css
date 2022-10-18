@@ -1,0 +1,85 @@
+.awe-section-4 {
+  margin-top: 2rem;
+}
+.spin {
+  text-align: center;
+  background: #fff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  margin: 20px 0;
+}
+/* Tieu de */
+.title {
+  width: 100%;
+  border-bottom: 2px solid #080000;
+  display: flex;
+}
+.title .tile-name {
+  flex: 1;
+}
+.title .tile-name span {
+  padding: 0.2rem 1rem;
+  display: inline-block;
+  background-color: #080000;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.title .btn_menu ul {
+  display: flex;
+  list-style: none;
+}
+.title .btn_menu ul li {
+  margin: 0 1rem;
+}
+.title .btn_menu ul li .menu_item {
+  text-decoration: none;
+  color: #080000;
+  text-transform: uppercase;
+}
+.btn-left i,
+.btn-right i {
+  margin: 0 0.3rem;
+  font-size: 1.3rem;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.btn-left i:hover,
+.btn-right i:hover {
+  opacity: 1;
+}
+/* End tieu de */
+.list_products {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+/* logo */
+.list_products .logo_product {
+  display: flex;
+  flex-direction: column;
+}
+.list_products .logo_product img {
+  height: auto;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+}
+/* End logo */
+.owls {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+.list_items {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  transition: 0.3s;
+}
+/* item */
+/* end item */

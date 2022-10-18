@@ -1,0 +1,12 @@
+const express=require('express')
+const router=express.Router()
+const ProductController =require('../Controllers/Products.controller')
+router.get('/search',ProductController.searchProduct)
+router.get('/new',ProductController.getNew)
+router.get('/converse',ProductController.getConverse)
+router.get('/vans',ProductController.getVans)
+router.get('/accessories',ProductController.getAccessories)
+router.get('/product/:id',ProductController.getbyID)
+router.get('/:slug',ProductController.getbySlug)
+router.get('/',ProductController.get)
+module.exports=router

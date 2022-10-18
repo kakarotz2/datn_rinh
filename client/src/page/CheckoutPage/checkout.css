@@ -1,0 +1,315 @@
+.wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.main{
+    padding-top: 2rem;
+    width: 70%;
+}
+.main_content{
+    display: flex;
+    justify-content: space-between;
+}
+.order{
+    width: 50%;
+}
+.main_header{
+    margin-bottom: 2rem;
+}
+.order .content_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.order .content_title span:first-child{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.order .content_title span:nth-child(2){
+    font-size: 1rem;
+}
+/* form */
+.field{
+    position: relative;
+}
+.field input{
+    line-height: 2.5;
+}
+.field input,.field textarea{
+    width: 100%;
+    position: relative;
+    border: 1px #d9d9d9 solid;
+    color: #000000;
+    padding-left: 0.5rem;
+    border-radius: 5px;
+    outline: none;
+}
+.field input:focus,.field textarea:focus{
+    border: 2px solid #66afe9;
+}
+textarea:focus { 
+    outline: none !important;
+    border-color: #66afe9;
+}
+.field textarea{
+    padding:0.5rem;
+}
+.shipping{
+    flex: 1;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.shipping p{
+    font-weight: 550;
+    font-size: 1.1rem;
+}
+.shipping small{
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    background-color: #d1ecf1;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid #bee5eb;
+}
+.shipping div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.shipping div span i{
+    font-size: 1.5rem;
+    color: #1990c6;
+}
+/* sidebar */
+.main_sidebar{
+    flex: 1;
+    border-left: 1px solid #e1e1e1;
+    padding-left: 1.5rem;
+    background-color: #fafafa;
+}
+.sidebar_header p:first-child{
+    line-height: 3.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-bottom: 1px solid #e1e1e1;
+}
+ .order_items{
+     display: none;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 1rem;
+}
+.order_items.active{
+    display: block;
+}
+ .order_items .order_item .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.order_item .item .item_img {
+    position: relative;
+}
+.order_item .item .item_img img{
+    width: 4rem;
+    height: 3.5rem;
+    object-fit: cover;
+    border: 1px solid #e1e1e1;
+}
+.order_item .item .item_img span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 0.8rem;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    background-color: #2a9dcc;
+    border-radius: 50%;
+}
+.order_item .item .item_name{
+    flex: 1;
+    margin-left: 1rem;
+}
+.order_item .item .item_name span:first-child{
+    color: #000000;
+    font-size: 0.85rem;
+}
+/* #717171 */
+.order_sumary .flex{
+    display: flex;
+    justify-content: space-between;
+}
+.order_sumary .flex span{
+    color: #717171;
+    line-height: 2rem;
+}
+.shipping-fee{
+    border-bottom: 1px solid #e1e1e1;
+}
+.total_sidebar{
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.total_sidebar span:nth-child(2){
+    color: #2a9dcc;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.ordersidebar_bottom{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.ordersidebar_bottom span i{
+    margin-right: 0.3rem;
+    font-size: 1rem;
+}
+.ordersidebar_bottom button{
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #357ebd;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.order_hidden{
+    display: none;
+    position: relative;
+    background-color: #fafafa;
+}
+.order_hidden button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e1e1e1;
+    border-left: none;
+    border-right: none;
+    line-height: 3rem;
+}
+.order_hidden button span:first-child{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.order_hidden .order_items{
+    padding-top: 1rem;
+}
+.order_hidden .flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.order_hidden .total_sidebar{
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 1rem;
+}
+.btn_hidden{
+    display: none;
+}
+.msg-err{
+    color: red;
+}
+/* modal */
+.box_confirm{
+    text-align: center;
+}
+.box_confirm h4{
+    color: #717171;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.btn_confirm button{
+    padding: 0.3rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cancel{
+    background-color: #f0f0f0;
+    color: #000000;
+}
+.confirm{
+    background-color: #2a9dcc;
+    color: #fff;
+}
+.box_success {
+    text-align: center;
+}
+.box_success .icon_success{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #2a9dcc;
+    padding: 1.5rem;  
+    margin-bottom: 1rem;  
+}
+.box_success .icon_success i{
+    color: #fff;
+    font-size: 3rem;
+}
+.box_success button{
+    background-color: #2a9dcc;
+    border: none;
+    outline: none;
+    padding:0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* hidden */
+@media screen and (max-width:1023px){
+    .main_sidebar{
+        display: none;
+    }
+    .main{
+        width: 100%;
+    }
+    .main_content{
+        width: 100%;
+        flex-direction: column;
+    }
+    .main_content .order,.main_content .shipping{
+        width: 100%;
+    }
+    .shipping{
+        padding: 0;
+    }
+    .order_hidden{
+        display: block;
+    }
+    .btn_hidden{
+        display: block;
+    }
+    .btn_hidden .ordersidebar_bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media screen and (max-width:589px){
+    .container{
+        padding: 0 1rem;
+    }
+}
+@media screen and (max-width:324px){
+    .container{
+        padding: 0 1rem;
+    }
+    .order_hidden button span:first-child{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}

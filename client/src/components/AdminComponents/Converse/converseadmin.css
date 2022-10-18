@@ -1,0 +1,12 @@
+.page_admin {
+  padding: 2rem;
+}
+.ad_title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.ad_title span {
+  font-size: 1.4rem;
+  color: #1890ff;
+}

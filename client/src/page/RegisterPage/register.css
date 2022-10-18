@@ -1,0 +1,70 @@
+.regis_form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.regis_form .field {
+  width: 50%;
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+.login_form {
+  display: block;
+}
+.login_form .field {
+  width: 50%;
+}
+.field input {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  line-height: 2.5rem;
+  padding: 0 1rem;
+  outline: none;
+}
+.field input:focus {
+  box-shadow: -2px -2px 10px #e5e5e5;
+  box-shadow: 2px 2px 10px #e5e5e5;
+}
+.btn_submit {
+  margin-top: 1rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+.btn_submit button {
+  padding: 0.5rem 1.1rem;
+  background-color: #000000;
+  margin-right: 1rem;
+  color: #fff;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn_submit button:hover {
+  background-color: #fff;
+  color: #000000;
+  border: 1px solid #000000;
+}
+.link_sub {
+  color: #000000;
+  text-decoration: underline;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+.link_sub:hover {
+  color: #000000;
+  opacity: 1;
+  text-decoration: underline;
+}
+@media screen and (max-width: 1023px) {
+  .login_form .field {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 787px) {
+  .regis_form .field {
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
+  }
+}

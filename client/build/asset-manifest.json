@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7fca8660.chunk.css",
+    "main.js": "/static/js/main.c7b6186e.chunk.js",
+    "main.js.map": "/static/js/main.c7b6186e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.adafc510.js",
+    "runtime-main.js.map": "/static/js/runtime-main.adafc510.js.map",
+    "static/css/2.93f93578.chunk.css": "/static/css/2.93f93578.chunk.css",
+    "static/js/2.9249832a.chunk.js": "/static/js/2.9249832a.chunk.js",
+    "static/js/2.9249832a.chunk.js.map": "/static/js/2.9249832a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.8bccfcf37e74e0db3158374c5b73db73.js": "/precache-manifest.8bccfcf37e74e0db3158374c5b73db73.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.93f93578.chunk.css.map": "/static/css/2.93f93578.chunk.css.map",
+    "static/css/main.7fca8660.chunk.css.map": "/static/css/main.7fca8660.chunk.css.map",
+    "static/js/2.9249832a.chunk.js.LICENSE.txt": "/static/js/2.9249832a.chunk.js.LICENSE.txt",
+    "static/media/converse_logo1.png": "/static/media/converse_logo1.59ac7218.png",
+    "static/media/converse_logo2.png": "/static/media/converse_logo2.06348821.png",
+    "static/media/img_effect1.png": "/static/media/img_effect1.41dd1c05.png",
+    "static/media/img_effect2.png": "/static/media/img_effect2.eef2d435.png",
+    "static/media/img_effect31.png": "/static/media/img_effect31.116c4b14.png",
+    "static/media/img_effect32.png": "/static/media/img_effect32.353365be.png",
+    "static/media/loading.gif": "/static/media/loading.3f259006.gif",
+    "static/media/logo.png": "/static/media/logo.c56153c7.png",
+    "static/media/logowearn.png": "/static/media/logowearn.c56153c7.png",
+    "static/media/slide1.png": "/static/media/slide1.a3dd5aa8.png",
+    "static/media/slide2.png": "/static/media/slide2.b822c631.png",
+    "static/media/slide3.png": "/static/media/slide3.30741cd1.png",
+    "static/media/slide4.png": "/static/media/slide4.09d34244.png",
+    "static/media/vans_logo1.png": "/static/media/vans_logo1.e805c7dc.png",
+    "static/media/vans_logo2.png": "/static/media/vans_logo2.d3de5e04.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.adafc510.js",
+    "static/css/2.93f93578.chunk.css",
+    "static/js/2.9249832a.chunk.js",
+    "static/css/main.7fca8660.chunk.css",
+    "static/js/main.c7b6186e.chunk.js"
+  ]
+}

@@ -1,0 +1,191 @@
+.cartmodal .ant-modal-body{padding:0;
+background-color: #fff;}
+.modal_title {
+  display: flex;
+  background-color: #000;
+  color: #fff;
+  align-items: center;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+}
+.modal_title i {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+.modal_info{
+    padding: 0 1rem;
+}
+.modal_table td {
+  border: 1px solid #e1e1e1;
+}
+.modal_table {
+  height: 20rem !important;
+  overflow-y: scroll;
+}
+.modal_table table {
+  width: 100%;
+}
+.modal_table table thead td {
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+.modal_table tbody td .modal_img img {
+  width: 7rem;
+  height: 7rem;
+}
+.modal_table table tbody tr td {
+  padding: 1rem 0.5rem;
+  font-size: 1rem;
+}
+.modal_table table tbody tr td:not(:first-child) {
+  text-align: center;
+}
+.modal_table table tbody tr td:first-child {
+  display: flex;
+}
+.pro_info button {
+  border: none;
+  outline: none;
+  color: gray;
+  background-color: transparent;
+  cursor: pointer;
+}
+.pro_info button i {
+  margin-right: 0.5rem;
+}
+.total_price {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+.total_price span {
+  color: #000;
+  font-weight: bold;
+}
+.btn_access {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+.btn_access button .link_btn {
+  color: #fff;
+}
+.btn_access button:first-child {
+  margin-right: 1rem;
+  font-size: 0.95rem;
+  background-color: #7f7f7f;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 0.3rem 3rem;
+  transition: 0.3s;
+  border: 1px solid #7f7f7f;
+  cursor: pointer;
+}
+.btn_access button:nth-child(2) {
+  font-size: 0.95rem;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 0.3rem 3rem;
+  transition: 0.3s;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+.btn_access button:first-child:hover{
+  color: #000000;
+}
+.btn_access button:hover {
+  background-color: #fff;
+  border: 1px solid #000000;
+}
+.btn_access button:hover .link_btn {
+  color: #000000;
+}
+.modal_top{
+    display: none;
+}
+.custom .ant-modal-body {
+  padding: 0 !important;
+  background-color: #fff;
+}
+/* modal responsive */
+.modal_top_title {
+  display: flex;
+  background-color: #000;
+  padding: 0.3rem 0;
+  padding-left: 1rem;
+}
+.modal_top_title i{
+    line-height: 3rem;
+    color: #fff;
+    font-size: 2rem;
+}
+.modal_top_title span{
+    color: #fff;
+    line-height: 3rem;
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+}
+.modal_top_list{
+    padding: 0 1rem;
+    max-height: 20rem;
+    overflow-y: scroll;
+}
+.modal_top_list .modal_top_item{
+    display: flex;
+    align-items: center;
+}
+.modal_top_list .modal_top_item .modal_top_img {
+    max-width: 7rem;
+    max-height: 7rem;
+    margin-right: 1rem;
+}
+.modal_top_list .modal_top_item .modal_top_img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.modal_top_right p{
+    margin: 0;
+}
+.modal_top_right span{
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.btn_modal_top{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+.btn_modal_top button{
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+.btn_modal_top button:first-child{
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+}
+.btn_modal_top button:last-child{
+    background-color: #000;
+    border: 1px solid #fff;
+}
+@media screen and (max-width: 989px) {
+    .modal_top{
+        display: block
+    }
+    .modal_normal{
+        display: none;
+    }
+}

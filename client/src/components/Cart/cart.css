@@ -1,0 +1,121 @@
+.cart_title{
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 1rem;
+}
+.cart_page tr:nth-child(2n + 1) {
+    background-color: #fff;
+  }
+.cart_page{
+    text-align: center;
+    background-color: #fff !important;
+}
+.cart_page h3{
+    font-size: 2rem;
+}
+.cart_page tr td img{
+    height: 7rem;
+    width: 7rem;
+}
+.cart_page tr td p{
+    margin: 0;
+}
+.cart_page tr td span{
+    opacity: 0.6;
+}
+.cart_page tr td input{
+    border: 1px solid #ddd;
+    height: 30px;
+    line-height: 30px;
+    margin-left: -1px;
+    text-align: center;
+    width: 50px;
+    vertical-align: middle;
+    margin-right: -1px;
+    display: inline-block;
+    min-height: 30px;
+    padding: 0;
+    outline: none;
+}
+.cart_page tr td button{
+    border: 1px solid #ddd;
+    outline: none;
+    background: #fff;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: top;
+    padding: 0;
+    cursor: pointer;
+}
+.cart_small .none{
+    display: none;
+}
+.cart_small tr td img{
+    height: 4rem;
+    width: 4rem;
+}
+.cart_small tr td{
+    font-size: 0.9rem;
+}
+.cart_small tr td input {
+    width: 30px;
+    line-height: 20px !important;
+    height: 20px !important;
+}
+.total{
+    margin-top: 2rem;
+    text-align: right;
+}
+.total p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.total button{
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.continue{
+    margin-right: 1rem;
+    background-color: #3d4356;
+}
+.checkout{
+    background-color: #000000;
+}
+.button_cart{
+    color: #fff;
+}
+.button_cart:hover{
+    color: #fff;
+}
+.checkout:hover{
+    background-color: #fff;
+    border:1px solid #000000;
+}
+.checkout:hover .button_cart{
+    color: #000000;
+}
+.checkout {
+    color: #000000;
+}
+.del_btn{
+    display: none;
+}
+@media screen and (max-width:1023px){
+    .cart_page tr td img{
+        height: 5rem;
+        width: 5rem;
+    }
+}
+@media screen and (max-width:989px){
+    .del_btn{
+        display: block;
+    }
+}

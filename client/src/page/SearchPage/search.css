@@ -1,0 +1,7 @@
+.search_products{
+    display: flex;
+    flex-wrap: wrap;
+}
+.search_products .owl-item{
+    min-width: 20% !important;
+}

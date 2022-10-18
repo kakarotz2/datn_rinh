@@ -1,0 +1,111 @@
+.awe-section-3 {
+  margin-top: 3rem;
+}
+.awe-section-3 .container .heading_hotdeal {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+}
+.awe-section-3 .container .heading_hotdeal img {
+  height: 100%;
+}
+.awe-section-3 .container .heading_hotdeal .up_right {
+  transform: rotate(180deg);
+}
+.awe-section-3 .container .heading_hotdeal span {
+  font-size: 2rem;
+  width: 40rem;
+  text-transform: uppercase;
+  padding: 0 1rem;
+}
+.new_products{
+  overflow: scroll;
+}
+.new_products::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.new_products {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.list_items-new {
+  transition: 0.2s;
+}
+.list_items-new .owl-item{
+  min-width: 20%;
+}
+.owl-item {
+  position: relative;
+}
+.list_items-new  .owl-item .new {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible !important;
+  top: 1rem;
+  right: 1rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  background: url("//bizweb.dktcdn.net/100/347/923/themes/742041/assets/label_new.png?1602847155401");
+  background-position: center;
+  z-index: 100;
+}
+.spin{
+  display: flex;
+  justify-content: center;
+}
+/* circle */
+.circle{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle .circle_item{
+  display: none;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin:0.3rem;
+  background-color:#cccccc;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.circle .circle_item.active{
+  background-color: #080000;
+}
+@media screen and (max-width:989px){
+  .list_items-new .owl-item{
+    min-width: 25% !important;
+  }
+  .circle .circle_item:first-child{
+    display: block;
+  }
+  .circle .circle_item:nth-child(2){
+    display: block;
+  }
+}
+@media screen and (max-width:778px){
+  .list_items-new .owl-item{
+    min-width: 33.33% !important;
+  }
+  .circle .circle_item:nth-child(3){
+    display: block;
+  }
+}
+@media screen and (max-width:600px){
+  .list_items-new .owl-item{
+    min-width: 50% !important;
+  }
+}
+@media screen and (max-width:319px){
+  .list_items-new .owl-item{
+    min-width: 100% !important;
+  }
+}

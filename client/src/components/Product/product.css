@@ -1,0 +1,111 @@
+
+  /* item */
+  .owls{
+    overflow: scroll !important;
+  }
+  .owls::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .owls {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .owl-item {
+    position: relative;
+    min-width: 25%;
+    padding: 0 0.5rem;
+  }
+  .owl-item .product-thumbnail {
+    position: relative;
+    width: 100%;
+  }
+  .owl-item .product-thumbnail .img_product {
+    width: 100%;
+  }
+  .owl-item .product-thumbnail img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .owl-item .product-thumbnail .new {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    top: 1rem;
+    right: 1rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    background: url("//bizweb.dktcdn.net/100/347/923/themes/742041/assets/label_new.png?1602847155401");
+    background-position: center;
+  }
+  .owl-item .product-name{
+    text-align: center;
+  }
+  .owl-item .product-name .link-name {
+    text-align: center;
+    color: #080000;
+  }
+  .link-name {
+    text-decoration: none;
+  }
+  .review{
+    text-align: center;
+  }
+  .review i {
+    color: #ffba00;
+  }
+  .owl-item .product-price {
+    text-align: center;
+  }
+  .owl-item .product-price span {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .owl-item .product-hide {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    bottom: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+  }
+  .owl-item:hover .product-hide {
+    display: flex;
+  }
+  .owl-item .product-hide .more {
+    text-decoration: none;
+    color: #fff;
+    background-color: #080000;
+    height: 100%;
+    margin-right: 0.5rem;
+    line-height: 2rem;
+    border-radius: 5px;
+    padding: 0 1rem;
+  }
+  .owl-item .product-hide .more:hover {
+    background-color: #d92b1f;
+  }
+  .owl-item .product-hide .more i {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+  .owl-item .product-hide button {
+    background-color: #080000;
+    height: 100%;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 2rem;
+  }
+  .owl-item .product-hide button:hover {
+    background-color: #d92b1f;
+  }
