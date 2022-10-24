@@ -1,30 +1,31 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Product from '../Product/Product';
+import './iphone.css';
 import converse_logo1 from '../../img/converse_logo1.png';
 import converse_logo2 from '../../img/converse_logo2.png';
-import Axios from 'axios';
+import Product from '../Product/Product';
 import { Spin } from 'antd';
-function Converse() {
-    const [acc_products, setAcc_products] = useState([]);
+import Axios from 'axios';
+function Iphone() {
+    const [cv_products, setCv_products] = useState([]);
     useEffect(() => {
-        Axios.get('/api/accessories').then((data) => {
-            setAcc_products(data.data);
+        Axios.get('/api/iphone').then((data) => {
+            setCv_products(data.data);
         });
     }, []);
     const show1 = () => {
-        if (acc_products.length > 0) {
-            let result = Array.from(acc_products)
+        if (cv_products.length > 0) {
+            let result = Array.from(cv_products)
                 .slice(0, 6)
                 .map((item, index) => {
                     return (
                         <Product
-                            type={item.type}
                             key={index}
                             name={item.name}
                             url={item.url}
                             id={item._id}
                             price={item.price}
+                            type={item.type}
                         />
                     );
                 });
@@ -34,18 +35,18 @@ function Converse() {
         }
     };
     const show2 = () => {
-        if (acc_products.length > 0) {
-            let result = Array.from(acc_products)
+        if (cv_products.length > 0) {
+            let result = Array.from(cv_products)
                 .slice(6, 12)
                 .map((item, index) => {
                     return (
                         <Product
-                            type={item.type}
                             key={index}
                             name={item.name}
                             url={item.url}
                             id={item._id}
                             price={item.price}
+                            type={item.type}
                         />
                     );
                 });
@@ -59,36 +60,36 @@ function Converse() {
             <div className="container">
                 <div className="title">
                     <div className="tile-name">
-                        <span>phụ kiện</span>
+                        <span>iphone</span>
                     </div>
                     <div className="btn_menu">
                         <ul>
                             <li>
-                                <Link className="menu_item" to="/">
-                                    balo conversse
+                                <Link className="menu_item" to="/converse">
+                                    xem tất cả
                                 </Link>
                             </li>
                             <li>
-                                <Link className="menu_item" to="/">
-                                    áo converse
+                                <Link className="menu_item" to="/converse-classic">
+                                    Classic
                                 </Link>
                             </li>
                             <li>
-                                <Link className="menu_item" to="/">
-                                    mũ converse
+                                <Link className="menu_item" to="/converse-chuck70s">
+                                    Chuck 70s
                                 </Link>
                             </li>
                             <li>
-                                <Link className="menu_item" to="/">
+                                <Link className="menu_item" to="/converse">
                                     Xem tất cả
                                 </Link>
                             </li>
                         </ul>
                     </div>
-                    <div className="btn-left btn-left-acc">
+                    <div className="btn-left btn-left-cv">
                         <i className="fas fa-chevron-left"></i>
                     </div>
-                    <div className="btn-right btn-right-acc">
+                    <div className="btn-right btn-right-cv">
                         <i className="fas fa-chevron-right"></i>
                     </div>
                 </div>
@@ -98,16 +99,16 @@ function Converse() {
             <img src={converse_logo2} alt="" />
           </div> */}
                     <div className="owls">
-                        {acc_products.length === 0 ? (
+                        {/* Owl-item */}
+                        {cv_products.length === 0 ? (
                             <div className="spin">
                                 <Spin size="large" />
                             </div>
                         ) : (
                             ''
                         )}
-                        {/* Owl-item */}
-                        <div className="list_items list_items-acc">{show1()}</div>
-                        <div className="list_items list_items-acc">{show2()}</div>
+                        <div className="list_items list_items-cv">{show1()}</div>
+                        <div className="list_items list_items-cv">{show2()}</div>
                         {/* End owl */}
                     </div>
                 </div>
@@ -116,4 +117,4 @@ function Converse() {
     );
 }
 
-export default Converse;
+export default Iphone;

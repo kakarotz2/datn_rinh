@@ -1,4 +1,4 @@
-.loading{
+.loading {
     position: fixed;
     top: 0;
     left: 0;
@@ -9,8 +9,8 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 100000000;
-}
-.loading img{
-    width: 4rem;
-    height: 4rem;
+    img {
+        width: 4rem;
+        height: 4rem;
+    }
 }
